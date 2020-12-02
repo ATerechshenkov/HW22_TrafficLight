@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW22_TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-o0-AxR">
+                                <rect key="frame" x="20" y="30" width="335" height="597"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SRm-5L-bgS">
+                                        <rect key="frame" x="102.5" y="0.0" width="130" height="511"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-iM-cjy">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="163.5"/>
+                                                <string key="text">🔴
+красный круг
+Unicode: U+1F534, UTF-8: F0 9F 94 B4</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gWD-5y-V6P">
+                                                <rect key="frame" x="0.0" y="173.5" width="130" height="164"/>
+                                                <string key="text">🟡
+желтый круг
+Unicode: U+1F7E1, UTF-8: F0 9F 9F A1</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-oO-m0O">
+                                                <rect key="frame" x="0.0" y="347.5" width="130" height="163.5"/>
+                                                <string key="text">🟢
+зеленый круг
+Unicode: U+1F7E2, UTF-8: F0 9F 9F A2</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-TB-WGr">
+                                        <rect key="frame" x="42.5" y="541" width="250" height="56"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="4Y9-kj-342"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lyW-bi-yGb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSwitchButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQF-vN-3hz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9QV-o0-AxR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="KbV-ob-17V"/>
+                            <constraint firstItem="9QV-o0-AxR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LRe-WO-4O3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9QV-o0-AxR" secondAttribute="trailing" constant="20" id="dHi-ux-KMZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9QV-o0-AxR" secondAttribute="bottom" constant="40" id="wkd-zn-S0a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenLamp" destination="8bP-oO-m0O" id="kNF-8y-8SJ"/>
+                        <outlet property="redLamp" destination="M5G-iM-cjy" id="gqe-XF-Ubo"/>
+                        <outlet property="switchButton" destination="nfL-TB-WGr" id="QH2-7e-Vs5"/>
+                        <outlet property="yellowLamp" destination="gWD-5y-V6P" id="3Fn-l8-bOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
